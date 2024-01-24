@@ -8,8 +8,7 @@ An advanced *bash script* to shorten URLs with [YOURLS](https://yourls.org) for 
 # Installation
 
 ## DOWNLOAD the SCRIPT
-Assuming you have git installed. Otherwise, install it with sudo pacman -S git
-or any other similar command on other Linux distributions.
+Assuming you have git installed. Otherwise, install it with sudo pacman -S git or a similar command on other Linux distributions.
 ```bash
 git clone https://github.com/gerald-drissner/kurl.git
 ```
@@ -29,8 +28,8 @@ sudo mv kurls.sh /usr/local/bin
 ```
 
 ## Run the script
-Now, you can run the script from anywhere in the terminal by typing 'kurl'.
-When you run it for the first time, you can enter the credentials: your yourls server and the signature key.
+Now you can run the script from anywhere in the terminal by typing 'kurl'.
+If you are running it for the first time, you can enter the credentials: your yourls server and the signature key.
 So just run:
 ```bash
 kurl.sh
@@ -38,20 +37,21 @@ kurl.sh
 
 
 ## Usage
+When you run kurl.sh, you will get all the information you need. As a quickstarter:
 
-Shorten a long URL :
+### Shorten a long URL :
 
 ```bash
 kurl https://someverylongdomain.com
 ```
 
-Shorten a long URL and provide a custom keyword and a custom title :
+### Shorten a long URL and provide a custom keyword and a custom title :
 
 ```bash
 kurl https://someverylongurl.com -k test12 --title "Some title"
 ```
 
-Shorten a URL and receive JSON output:
+### Shorten a URL and receive JSON output:
 ```bash
 $> kurl https://example.com -f json
 {
@@ -70,7 +70,7 @@ $> kurl https://example.com -f json
 }
 ```
 
-Display help message :
+### Display help message :
 ```bash
 kurl --help
 ```
