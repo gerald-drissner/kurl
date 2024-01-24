@@ -22,9 +22,9 @@ sudo chmod +x kurl.sh
 ```
 
 ## Move the script
-Move the script to a directory in your PATH with the command 'sudo mv yourls.sh /usr/local/bin'.
+Move the script to a directory in your PATH with the command 'sudo mv kurl.sh /usr/local/bin'.
 ```bash
-sudo mv kurls.sh /usr/local/bin
+sudo mv kurl.sh /usr/local/bin
 ```
 
 ## Run the script
