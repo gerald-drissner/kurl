@@ -1,40 +1,55 @@
-# YOURLS BASH [![Listed in Awesome YOURLS!](https://img.shields.io/badge/Awesome-YOURLS-C5A3BE)](https://github.com/YOURLS/awesome-yourls/)
-A simple bash script to shorten URLs with [YOURLS](https://yourls.org) 
+# KURL BASH
+An advanced bash script to shorten URLs with [YOURLS](https://yourls.org) for Linux distributions
 
-![image](https://user-images.githubusercontent.com/223647/120930653-8a50cf80-c6ee-11eb-8972-22197382bfa4.png)
+![kurl](https://github.com/gerald-drissner/kurl/assets/16115672/d8b4ff83-0f6b-4bf4-a098-9ea3cd35bbc3)
 
-## Installation
+# Installation
 
-```shell
-# using wget
-$> wget -q https://raw.githubusercontent.com/ozh/yourls-bash/master/yourls
-# using curl
-$> curl -s -o yourls https://raw.githubusercontent.com/ozh/yourls-bash/master/yourls
+## DOWNLOAD the SCRIPT
+Assuming you have git installed. Otherwise, install it with sudo pacman -S git
+or any other similar command on other Linux distributions.
+```bash
+$> git clone https://github.com/gerald-drissner/kurl.git
 ```
 
-Then, edit the two parameters at the beginning of the script (`YOURLS_HOST` and `YOURLS_KEY`) to match your setup.
+## Make the script executable
+```bash
+$> cd kurl
+$> sudo chmod +x kurl.sh
+```
 
-Depending on your setup, you may want to make this file executable (`chmod +x yourls`) and in your $PATH (eg `~/bin` maybe)
+## Move the script
+Move the script to a directory in your PATH with the command 'sudo mv yourls.sh /usr/local/bin'.
+```bash
+$> sudo mv kurls.sh /usr/local/bin
+```
+
+## Run the script
+Now, you can run the script from anywhere in the terminal by typing 'kurl'.
+When you run it for the first time, you can enter the credentials: your yourls server and the signature key.
+So just run:
+```bash
+$> kurl.sh
+```
+
 
 ## Usage
 
 Shorten a long URL :
 
 ```bash
-$> yourls https://someverylongdomain.com
-https://sho.rt/ef
+$> kurl https://someverylongdomain.com
 ```
 
 Shorten a long URL and provide a custom keyword and a custom title :
 
 ```bash
-$> yourls https://someverylongurl.com -k test12 --title "Some title"
-https://sho.rt/test12
+$> kurl https://someverylongurl.com -k test12 --title "Some title"
 ```
 
-Shorten a URL and receive JSON output, for instance to display with `jq` :
+Shorten a URL and receive JSON output:
 ```bash
-$> yourls https://example.com -f json | jq
+$> kurl https://example.com -f json
 {
   "url": {
     "keyword": "Nzs",
@@ -53,7 +68,7 @@ $> yourls https://example.com -f json | jq
 
 Display help message :
 ```bash
-$> yourls --help
+$> kurl --help
 ```
 
 ## License
