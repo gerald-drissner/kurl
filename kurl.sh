@@ -713,6 +713,7 @@ do
         echo -e "${RESET}"
         echo -e "${ORANGE}${BOLD}${ITALIC}kurl${RESET} is the name of a bash script that uses the Yourls API to shorten links."
         echo "You must install yourls on your server or have access to a yourls server with the so-called signature key."
+        echo "It works on all major ${BOLD}Linux{$RESET} distributions."
         echo -e "Kurl stands for ${BOLD}${GRAY}${ITALIC}Kurz-URL${RESET} which means ${BOLD}${GRAY}${ITALIC}short URL${RESET} in German.${RESET}"
         echo
         echo -e "${BOLD}${GRAY}Version:${RESET} ${BOLD}$VERSION${RESET}"
