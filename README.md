@@ -1,5 +1,7 @@
 # KURL BASH
-An advanced bash script to shorten URLs with [YOURLS](https://yourls.org) for Linux distributions
+
+An advanced *bash script* to shorten URLs with [YOURLS](https://yourls.org) for **Linux** distributions
+
 
 ![kurl](https://github.com/gerald-drissner/kurl/assets/16115672/d8b4ff83-0f6b-4bf4-a098-9ea3cd35bbc3)
 
@@ -9,19 +11,21 @@ An advanced bash script to shorten URLs with [YOURLS](https://yourls.org) for Li
 Assuming you have git installed. Otherwise, install it with sudo pacman -S git
 or any other similar command on other Linux distributions.
 ```bash
-$> git clone https://github.com/gerald-drissner/kurl.git
+git clone https://github.com/gerald-drissner/kurl.git
 ```
 
 ## Make the script executable
 ```bash
-$> cd kurl
-$> sudo chmod +x kurl.sh
+cd kurl
+```
+```bash
+sudo chmod +x kurl.sh
 ```
 
 ## Move the script
 Move the script to a directory in your PATH with the command 'sudo mv yourls.sh /usr/local/bin'.
 ```bash
-$> sudo mv kurls.sh /usr/local/bin
+sudo mv kurls.sh /usr/local/bin
 ```
 
 ## Run the script
@@ -29,7 +33,7 @@ Now, you can run the script from anywhere in the terminal by typing 'kurl'.
 When you run it for the first time, you can enter the credentials: your yourls server and the signature key.
 So just run:
 ```bash
-$> kurl.sh
+kurl.sh
 ```
 
 
@@ -38,13 +42,13 @@ $> kurl.sh
 Shorten a long URL :
 
 ```bash
-$> kurl https://someverylongdomain.com
+kurl https://someverylongdomain.com
 ```
 
 Shorten a long URL and provide a custom keyword and a custom title :
 
 ```bash
-$> kurl https://someverylongurl.com -k test12 --title "Some title"
+kurl https://someverylongurl.com -k test12 --title "Some title"
 ```
 
 Shorten a URL and receive JSON output:
@@ -68,7 +72,7 @@ $> kurl https://example.com -f json
 
 Display help message :
 ```bash
-$> kurl --help
+kurl --help
 ```
 
 ## License
