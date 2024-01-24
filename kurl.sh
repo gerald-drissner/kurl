@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script Name: yourls.sh
+# Script Name: kurl.sh
 # Version: 1.0.0
 # Purpose: This script interacts with the YOURLS API to create, delete, and manage short URLs.
 # Author: Gerald Drißner
@@ -30,9 +30,9 @@
 #
 # INSTALLATION:
 # 1. Download the script and save it to your local machine.
-# 2. Make the script executable by running the command 'chmod +x yourls.sh'.
-# 3. Move the script to a directory in your PATH with the command 'sudo mv yourls.sh /usr/local/bin'.
-#    Now, you can run the script from anywhere in the terminal by typing 'yourls'.
+# 2. Make the script executable by running the command 'sudo chmod +x kurl.sh'.
+# 3. Move the script to a directory in your PATH with the command 'sudo mv kurl.sh /usr/local/bin'.
+#    Now, you can run the script from anywhere in the terminal by typing 'kurl.sh'.
 
 # About
 
